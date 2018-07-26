@@ -95,7 +95,7 @@ appender("ERROR_FILE", RollingFileAppender) {
 appender("LOG_DB", DBAppender) {
     connectionSource(DriverManagerConnectionSource) {
         driverClass = "com.mysql.jdbc.Driver"
-        url = "jdbc:mysql://192.168.183.37:3306/blogx?useSSL=true"
+        url = "jdbc:mysql://127.0.0.1:3306/blogx?useSSL=true"
         user = "root"
         password = "root"
     }
