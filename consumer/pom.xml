@@ -10,5 +10,11 @@
     </parent>
     <artifactId>consumer</artifactId>
 
-
+    <dependencies>
+        <!-- MySql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
 </project>

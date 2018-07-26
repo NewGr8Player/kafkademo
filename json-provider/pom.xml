@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>kafka-demo</artifactId>
+        <groupId>com.xavier</groupId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>json-provider</artifactId>
+
+    <repositories>
+        <repository>
+            <id>xavier-maven-repo</id>
+            <url>https://raw.githubusercontent.com/NewGr8Player/maven-repo/master/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <canal-starter.version>0.0.1-REALEASE</canal-starter.version>
+        <canal-client.verison>1.0.25</canal-client.verison>
+    </properties>
+
+    <dependencies>
+        <!-- starter-canal -->
+        <dependency>
+            <groupId>com.xavier</groupId>
+            <artifactId>starter-canal</artifactId>
+            <version>${canal-starter.version}</version>
+        </dependency>
+        <!-- Canal client -->
+        <dependency>
+            <groupId>com.alibaba.otter</groupId>
+            <artifactId>canal.client</artifactId>
+            <version>${canal-client.verison}</version>
+        </dependency>
+        <!-- MySql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+</project>

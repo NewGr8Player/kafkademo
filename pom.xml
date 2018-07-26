@@ -12,6 +12,7 @@
     <modules>
         <module>provider</module>
         <module>consumer</module>
+        <module>json-provider</module>
     </modules>
 
     <parent>
@@ -44,10 +45,17 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
-        <!-- MySql -->
+        <!-- Utils  -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
         <!-- Groovy -->
         <dependency>
